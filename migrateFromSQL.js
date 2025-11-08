@@ -94,7 +94,7 @@ const sqlData = {
 async function migrateData() {
   try {
     // Connect to MongoDB
-    await mongoose.connect(process.env.MONGO_URI || 'mongodb+srv://officialswiftfund:NextGenAlpha@swiftfunddb.w9ryzds.mongodb.net/SwiftfundDB');
+    await mongoose.connect(process.env.MONGO_URI);
     console.log('Connected to MongoDB');
 
     // Clear existing collections (optional - remove if you want to keep existing data)
